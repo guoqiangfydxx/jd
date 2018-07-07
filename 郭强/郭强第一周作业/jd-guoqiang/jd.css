@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:#F0F3EF;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #999999;
+}
+.banner{
+    position: relative;
+    height: 80px;
+    box-sizing: border-box;
+    width: 100%;
+    background: url("./images/banner.jpg")
+}
+.banner .close{
+    background: url("./images/close-preview-normal.png") no-repeat;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    cursor: pointer;
+}
+
+header{
+    height: 30px;
+    line-height: 30px;
+    color: #999999;
+    background-color: #E3E4E5;
+    box-sizing: border-box;
+    padding-left: 300px;
+    /*overflow: hidden;*/
+}
+.cities{
+    position:relative;
+    width: 62px;
+    float: left;
+    height: 30px;
+}
+.cities>.current_city{
+    cursor: pointer;
+    height: 31px;
+    line-height: 31px;
+    display: inline-block;
+    padding: 0 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+.current_city.active{
+    background-color: #ffffff;
+}
+.select_city{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 400px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    padding: 20px;
+    display: none;
+}
+.select_city li{
+    float: left;
+    width: 20%;
+}
+.login_title{
+    float:left;
+    margin-left: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    border-right: 1px solid #ccc;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    top: 5px;
+    padding-right: 10px;
+}
+.menus{
+    float: left;
+}
+.menus li{
+    float: left;
+    margin-left: 10px;
+}
+.menus a, .menus span{
+    font-size: 14px;
+}
+.myjd, .service{
+    position: relative;
+}
+.myjd>span, .service>span{
+    height: 31px;
+    line-height: 31px;
+    /*padding: 0 10px;*/
+    display: inline-block;
+    cursor: pointer;
+    position:relative;
+    z-index:20;
+    top: -1px;
+}
+.myjd_detail, .service_detail{
+    position: absolute;
+    top: 29px;
+    left: 0;
+    width: 250px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    color: #666666;
+    display: none;
+    z-index: 5;
+}
+.service_detail{
+    width: 180px;
+}
+.myjd_detail p, .service_detail p{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.myjd_detail >div, .service_detail div{
+    overflow: hidden;
+}
+.myjd_top, .service_top{
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.logo{
+    background:url("./images/logo.png") no-repeat;
+    width: 190px;
+    height: 170px;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    background-size: 190px 170px;
+    cursor: pointer;
+}
+
+.search{
+    box-sizing: border-box;
+    padding-left: 30%;
+    margin-top: 30px;
+    position:relative;
+    z-index: 1;
+}
+.btnSearch{
+    width: 50px;
+    height: 35px;
+    border: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 13px;
+    left: -3px;
+    background: #F10215 url("./images/iconmonstr-magnifier-1-24.png") no-repeat center center;
+    cursor: pointer;
+}
+.search input{
+    width: 350px;
+    height: 35px;
+    border: none;
+}
+.search ul {
+    overflow: hidden;
+    margin-top: 10px;
+}
+.search ul  li{
+    float: left;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.search_content{
+    height: 80px;
+    box-sizing: border-box;
+}
+
+.shop_cart{
+    position: absolute;
+    right: 8%;
+    top: 12px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    widtH: 250px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    color: #F10215;
+    background-color: #Ffffff;
+}
+.cart_img{
+    background:url("./images/iconmonstr-shopping-cart-5-32.png") no-repeat;
+    height: 25px;
+    width: 32px;
+    background-size: 32px 25px;
+
+}
+.text{
+    font-size: 14px;
+}
+.num{
+    width: 15px;
+    height: 15px;
+    background-color: #F10215;
+    color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 15px;
+    text-align: center;
+    position: relative;
+    top: -8px;
+}
+
+.classify{
+    padding-left: 28%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 13px;
+}
+.classify li{
+    float: left;
+    margin-right: 10px;
+}
+.classify li a{
+    font-size: 14px;
+    margin-right: 10px;
+}
+a.splice{
+    width: 1px;
+    height: 10px;
+    color: #cccccc;
+    display: inline-block;
+    background-color: #ccc;
+}
+.menu_slice{
+    margin-left: 10px;
+}
